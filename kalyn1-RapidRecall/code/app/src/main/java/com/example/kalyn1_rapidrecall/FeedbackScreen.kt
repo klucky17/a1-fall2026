@@ -1,5 +1,11 @@
 package com.example.kalyn1_rapidrecall
 
+/**
+Purpose = show user if they guessed right or wrong
+Design Rationale =
+    1. show the target sequence and the inputted player guess
+ */
+
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer

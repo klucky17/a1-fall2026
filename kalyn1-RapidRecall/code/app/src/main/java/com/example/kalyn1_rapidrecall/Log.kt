@@ -1,5 +1,11 @@
 package com.example.kalyn1_rapidrecall
 
+/**
+Purpose = game log variables
+Design Rationale =
+    1. create data class log
+ */
+
 data class Log(
     val length: Int,
     val userInput: String,

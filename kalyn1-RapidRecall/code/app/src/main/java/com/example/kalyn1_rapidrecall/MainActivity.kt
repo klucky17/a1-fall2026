@@ -1,5 +1,12 @@
 package com.example.kalyn1_rapidrecall
 
+/**
+Purpose = main activity, handles screen changes
+Design Rationale =
+    1. when the enum screen class is called, the coresponding screen file is called
+Outstanding Issues = empty else bracket
+*/
+
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent

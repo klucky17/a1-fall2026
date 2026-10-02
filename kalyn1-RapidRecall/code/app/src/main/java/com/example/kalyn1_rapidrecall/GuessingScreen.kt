@@ -1,5 +1,14 @@
 package com.example.kalyn1_rapidrecall
 
+/**
+Purpose = guess the sequence that was showed in eariler screen
+Design Rationale =
+    1. show how many numbers in the sequence
+    2. input guess
+    3. back button to exit
+Outstanding Issues = lots of restrictions for input
+ */
+
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row

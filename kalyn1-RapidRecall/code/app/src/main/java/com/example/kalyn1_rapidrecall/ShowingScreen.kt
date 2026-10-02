@@ -1,5 +1,14 @@
 package com.example.kalyn1_rapidrecall
 
+/**
+Purpose = show the target sequence to remember
+Design Rationale =
+    1. flash the numbers one by one
+Outstanding Issues =
+    1. cannot change the speed of the flashing numbers
+    2. if want to exit the game, have to wait for all numbers to show and then click back on the next page
+ */
+
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column

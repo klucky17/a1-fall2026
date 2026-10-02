@@ -1,5 +1,12 @@
 package com.example.kalyn1_rapidrecall
 
+/**
+Purpose = add all the logs together to make and total summary
+Design Rationale =
+    1. get overall total numbers across all logs
+    2. calculate accuracry percentage and display
+ */
+
 class Summary{
     private val items = mutableListOf<Log>()  //private so that only the coresponding add function can change it
 

@@ -1,5 +1,11 @@
 package com.example.kalyn1_rapidrecall
 
+/**
+Purpose = show overall game summary attempts
+Design Rationale =
+    1. show number of attempts, correct attemps, and accuracy percentage
+ */
+
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize

@@ -1,5 +1,13 @@
 package com.example.kalyn1_rapidrecall
 
+/**
+Purpose = overall game screen, keeps app alive at all times to hold the gam data
+Design Rationale =
+    1. screen class to change screens
+    2. variables that can be used in every file and also holds data
+    3. sequence generator and compare seqeuences
+ */
+
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue

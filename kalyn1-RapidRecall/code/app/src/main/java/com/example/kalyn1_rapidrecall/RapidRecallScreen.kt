@@ -1,5 +1,14 @@
 package com.example.kalyn1_rapidrecall
 
+/**
+Purpose = general home screen
+Design Rationale =
+    1. input sequence length to start game
+    2. view gameplay summary with button
+    3. view gameplay log with button
+Outstanding Issues = lots of restrictions for input
+ */
+
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

@@ -1,5 +1,12 @@
 package com.example.kalyn1_rapidrecall
 
+/**
+Purpose = show each individual attempt log
+Design Rationale =
+    1. display log info and seperate each with a border line
+Outstanding Issues = formatting is a bit weird
+ */
+
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
