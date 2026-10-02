@@ -2,6 +2,7 @@ package com.example.kalyn1_rapidrecall
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -52,14 +53,30 @@ fun GuessingScreen(
             modifier = Modifier.width(200.dp)
         )
 
-        Button(
-            enabled = playerGuess.length == vm.sequenceLength,  //can only guess if input length = sequence length
-            onClick = {
-                vm.Guess(playerGuess)
-                vm.goTo(Screen.FEEDBACK)  //show feedback
-            }
+        Spacer(modifier = Modifier.height(8.dp))
+
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.Center,
+            verticalAlignment = Alignment.CenterVertically
         ){
-            Text("Guess")
+            Button(
+                enabled = playerGuess.length == vm.sequenceLength,  //can only guess if input length = sequence length
+                onClick = {
+                    vm.Guess(playerGuess)  //compare sequences
+                    vm.goTo(Screen.FEEDBACK)  //show feedback
+                }
+            ){
+                Text("Guess")
+            }
+
+            Button(
+                onClick = {
+                    vm.goTo(Screen.HOME)  //back to home screen
+                }
+            ){
+                Text("Back")
+            }
         }
     }
 }
