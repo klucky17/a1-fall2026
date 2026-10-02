@@ -59,18 +59,21 @@ fun LogsScreen(
         }
 
         LazyColumn(modifier = Modifier
-            .weight(1f)
-            .fillMaxWidth()){  //list will take over the left over height
-            items(attempts){entry ->
-                Column(modifier = Modifier.padding(vertical = 8.dp)){
-                    Text("Date: ${dateFormat.format(Date(entry.timestamp))}")
-                    Text("Time: ${timeFormat.format(Date(entry.timestamp))}")
-                    Text("Length: ${entry.length}")
-                    Text("Target: ${entry.targetSequence}")
-                    Text("Your input: ${entry.userInput}")
-                    Text(if (entry.correct) "Correct" else "Incorrect")
+            .weight(1f)  ////list will take over the left over height
+            .fillMaxWidth()
+        ){
+            for(entry in attempts){
+                item{
+                    Column(modifier = Modifier.padding(vertical = 8.dp)){
+                        Text("Date: ${dateFormat.format(Date(entry.timestamp))}")
+                        Text("Time: ${timeFormat.format(Date(entry.timestamp))}")
+                        Text("Length: ${entry.length}")
+                        Text("Target: ${entry.targetSequence}")
+                        Text("Your input: ${entry.userInput}")
+                        Text(if (entry.correct) "Correct" else "Incorrect")
+                    }
+                    HorizontalDivider()  //seperate each attempt
                 }
-                HorizontalDivider()  //seperate each attempt
             }
         }
         Button(
